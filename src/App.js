@@ -1,12 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import { Home } from './component/Home/Home';
+import { Header } from '../src/Layouts/Header/Header';
+import { Footer } from './Layouts/Footer/Footer';
+import { Banner } from './Components/Banner/Banner';
+import { SearchForm } from './Components/SearchForm/SearchForm';
+import { Provider } from 'react-redux';
+import store from './Services/store';
+
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <Provider store={store}>
+      <div className='App bg-cover bg-center bg-space'>
+        <Header />
+        <Banner />
+        <SearchForm />
+        <Footer />
+      </div>
+    </Provider>
   );
 }
 

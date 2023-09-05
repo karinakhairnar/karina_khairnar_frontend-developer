@@ -1,0 +1,38 @@
+/* SearchForm.module.css */
+
+.form {
+  display: flex;
+  color: red;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.filter {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+option {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter {
+    margin-bottom: 1em;
+  }
+}
