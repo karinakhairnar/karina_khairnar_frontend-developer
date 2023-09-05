@@ -1,3 +1,3 @@
 # 
 
-Deploy link :- ttps://spacex-web-com.netlify.app/
+Deploy link :- https://spacex-web-com.netlify.app/
